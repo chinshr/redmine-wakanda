@@ -3,3 +3,7 @@
 Redmine is a flexible project management web application written using Ruby on Rails framework.
 
 More details can be found in the doc directory or on the official website http://www.redmine.org
+
+= More
+
+http://railsguides.net/2012/04/28/how-to-deploy-redmine-to-heroku/
