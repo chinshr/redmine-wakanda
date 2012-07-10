@@ -31,7 +31,7 @@ end
 # Database gems
 platforms :mri, :mingw do
   group :postgresql do
-    gem "pg", ">= 0.11.0"
+    gem "pg"#, ">= 0.11.0"
   end
 
   group :sqlite do
@@ -89,4 +89,10 @@ Dir.glob File.expand_path("../plugins/*/Gemfile", __FILE__) do |file|
   instance_eval File.read(file)
 end
 
+group :production do
+  gem "therubyracer"
+  gem "thin"
+end
+
+gem "pg"
 gem "heroku"
